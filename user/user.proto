@@ -331,6 +331,30 @@ message getAllOnlineUsersResp {
   uint64 nextCursor = 2;
 }
 
+message genInvitationCodeReq {
+  string userID = 1;
+}
+
+message genInvitationCodeResp {
+  string userID = 1;
+  string invitationCode = 2;
+}
+
+message bindUsersInfo {
+  string userID = 1;
+  string invitationCode = 2;
+  int32 bindLevel = 3;
+}
+
+message getBindUsersReq {
+  string fromInvitationCode = 1;
+  string toInvitationCode = 2;
+}
+
+message getBindUsersResp {
+  repeated bindUsersInfo bindUsers = 2;
+}
+
 service user {
   //Get the specified user information full field
   rpc getDesignateUsers(getDesignateUsersReq) returns (getDesignateUsersResp);
@@ -383,4 +407,8 @@ service user {
   rpc setUserOnlineStatus(setUserOnlineStatusReq) returns (setUserOnlineStatusResp);
   // get all online users
   rpc getAllOnlineUsers(getAllOnlineUsersReq) returns (getAllOnlineUsersResp);
+
+  rpc genInvitationCode(genInvitationCodeReq) returns (genInvitationCodeResp);
+
+  rpc getBindUserID(getBindUsersReq) returns (getBindUsersResp);
 }
