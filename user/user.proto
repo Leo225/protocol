@@ -331,9 +331,7 @@ message getAllOnlineUsersResp {
   uint64 nextCursor = 2;
 }
 
-message genInvitationCodeReq {
-  string userID = 1;
-}
+message genInvitationCodeReq {}
 
 message genInvitationCodeResp {
   string userID = 1;
@@ -347,8 +345,7 @@ message bindUsersInfo {
 }
 
 message getBindUsersReq {
-  string fromInvitationCode = 1;
-  string toInvitationCode = 2;
+  string toInvitationCode = 1;
 }
 
 message getBindUsersResp {
