@@ -400,6 +400,12 @@ message BatchGetIncrementalGroupMemberResp {
   map<string, getIncrementalGroupMemberResp> respList = 1;
 }
 
+message CreateSingleGroupReq {}
+
+message CreatePairGroupReq {
+  repeated string memberUserIDs = 1;
+}
+
 service group {
   //创建群
   rpc createGroup(CreateGroupReq) returns (CreateGroupResp);
@@ -473,4 +479,7 @@ service group {
   rpc GetFullGroupMemberUserIDs(GetFullGroupMemberUserIDsReq) returns (GetFullGroupMemberUserIDsResp);
 
   rpc GetFullJoinGroupIDs(GetFullJoinGroupIDsReq) returns (GetFullJoinGroupIDsResp);
+
+  rpc createSingleGroup(CreateSingleGroupReq) returns (CreateGroupResp);
+  rpc createPairGroup(CreatePairGroupReq) returns (CreateGroupResp);
 }
