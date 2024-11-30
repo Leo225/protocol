@@ -5138,7 +5138,7 @@ var file_group_group_proto_rawDesc = []byte{
 	0x72, 0x47, 0x72, 0x6f, 0x75, 0x70, 0x52, 0x65, 0x71, 0x12, 0x24, 0x0a, 0x0d, 0x6d, 0x65, 0x6d,
 	0x62, 0x65, 0x72, 0x55, 0x73, 0x65, 0x72, 0x49, 0x44, 0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x09,
 	0x52, 0x0d, 0x6d, 0x65, 0x6d, 0x62, 0x65, 0x72, 0x55, 0x73, 0x65, 0x72, 0x49, 0x44, 0x73, 0x32,
-	0xea, 0x1e, 0x0a, 0x05, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x12, 0x4a, 0x0a, 0x0b, 0x63, 0x72, 0x65,
+	0xbd, 0x1f, 0x0a, 0x05, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x12, 0x4a, 0x0a, 0x0b, 0x63, 0x72, 0x65,
 	0x61, 0x74, 0x65, 0x47, 0x72, 0x6f, 0x75, 0x70, 0x12, 0x1c, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69,
 	0x6d, 0x2e, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x2e, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x47, 0x72,
 	0x6f, 0x75, 0x70, 0x52, 0x65, 0x71, 0x1a, 0x1d, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e,
@@ -5384,10 +5384,15 @@ var file_group_group_proto_rawDesc = []byte{
 	0x65, 0x6e, 0x69, 0x6d, 0x2e, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x2e, 0x43, 0x72, 0x65, 0x61, 0x74,
 	0x65, 0x50, 0x61, 0x69, 0x72, 0x47, 0x72, 0x6f, 0x75, 0x70, 0x52, 0x65, 0x71, 0x1a, 0x1d, 0x2e,
 	0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x2e, 0x43, 0x72, 0x65,
-	0x61, 0x74, 0x65, 0x47, 0x72, 0x6f, 0x75, 0x70, 0x52, 0x65, 0x73, 0x70, 0x42, 0x25, 0x5a, 0x23,
-	0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x6f, 0x70, 0x65, 0x6e, 0x69,
-	0x6d, 0x73, 0x64, 0x6b, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x2f, 0x67, 0x72,
-	0x6f, 0x75, 0x70, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x61, 0x74, 0x65, 0x47, 0x72, 0x6f, 0x75, 0x70, 0x52, 0x65, 0x73, 0x70, 0x12, 0x51, 0x0a, 0x10,
+	0x64, 0x69, 0x73, 0x6d, 0x69, 0x73, 0x73, 0x50, 0x61, 0x69, 0x72, 0x47, 0x72, 0x6f, 0x75, 0x70,
+	0x12, 0x1d, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x2e,
+	0x44, 0x69, 0x73, 0x6d, 0x69, 0x73, 0x73, 0x47, 0x72, 0x6f, 0x75, 0x70, 0x52, 0x65, 0x71, 0x1a,
+	0x1e, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x2e, 0x44,
+	0x69, 0x73, 0x6d, 0x69, 0x73, 0x73, 0x47, 0x72, 0x6f, 0x75, 0x70, 0x52, 0x65, 0x73, 0x70, 0x42,
+	0x25, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x6f, 0x70,
+	0x65, 0x6e, 0x69, 0x6d, 0x73, 0x64, 0x6b, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c,
+	0x2f, 0x67, 0x72, 0x6f, 0x75, 0x70, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -5591,48 +5596,50 @@ var file_group_group_proto_depIdxs = []int32{
 	78, // 88: openim.group.group.GetFullJoinGroupIDs:input_type -> openim.group.GetFullJoinGroupIDsReq
 	82, // 89: openim.group.group.createSingleGroup:input_type -> openim.group.CreateSingleGroupReq
 	83, // 90: openim.group.group.createPairGroup:input_type -> openim.group.CreatePairGroupReq
-	1,  // 91: openim.group.group.createGroup:output_type -> openim.group.CreateGroupResp
-	17, // 92: openim.group.group.joinGroup:output_type -> openim.group.JoinGroupResp
-	21, // 93: openim.group.group.quitGroup:output_type -> openim.group.QuitGroupResp
-	3,  // 94: openim.group.group.getGroupsInfo:output_type -> openim.group.GetGroupsInfoResp
-	5,  // 95: openim.group.group.setGroupInfo:output_type -> openim.group.SetGroupInfoResp
-	7,  // 96: openim.group.group.setGroupInfoEx:output_type -> openim.group.SetGroupInfoExResp
-	9,  // 97: openim.group.group.getGroupApplicationList:output_type -> openim.group.GetGroupApplicationListResp
-	11, // 98: openim.group.group.getUserReqApplicationList:output_type -> openim.group.GetUserReqApplicationListResp
-	69, // 99: openim.group.group.getGroupUsersReqApplicationList:output_type -> openim.group.getGroupUsersReqApplicationListResp
-	13, // 100: openim.group.group.getSpecifiedUserGroupRequestInfo:output_type -> openim.group.GetSpecifiedUserGroupRequestInfoResp
-	15, // 101: openim.group.group.transferGroupOwner:output_type -> openim.group.TransferGroupOwnerResp
-	19, // 102: openim.group.group.groupApplicationResponse:output_type -> openim.group.GroupApplicationResponseResp
-	23, // 103: openim.group.group.getGroupMemberList:output_type -> openim.group.GetGroupMemberListResp
-	25, // 104: openim.group.group.getGroupMembersInfo:output_type -> openim.group.GetGroupMembersInfoResp
-	27, // 105: openim.group.group.kickGroupMember:output_type -> openim.group.KickGroupMemberResp
-	29, // 106: openim.group.group.getJoinedGroupList:output_type -> openim.group.GetJoinedGroupListResp
-	31, // 107: openim.group.group.inviteUserToGroup:output_type -> openim.group.InviteUserToGroupResp
-	36, // 108: openim.group.group.getGroups:output_type -> openim.group.GetGroupsResp
-	39, // 109: openim.group.group.getGroupMembersCMS:output_type -> openim.group.GetGroupMembersCMSResp
-	41, // 110: openim.group.group.dismissGroup:output_type -> openim.group.DismissGroupResp
-	43, // 111: openim.group.group.muteGroupMember:output_type -> openim.group.MuteGroupMemberResp
-	45, // 112: openim.group.group.cancelMuteGroupMember:output_type -> openim.group.CancelMuteGroupMemberResp
-	47, // 113: openim.group.group.muteGroup:output_type -> openim.group.MuteGroupResp
-	49, // 114: openim.group.group.cancelMuteGroup:output_type -> openim.group.CancelMuteGroupResp
-	52, // 115: openim.group.group.setGroupMemberInfo:output_type -> openim.group.SetGroupMemberInfoResp
-	55, // 116: openim.group.group.getGroupAbstractInfo:output_type -> openim.group.GetGroupAbstractInfoResp
-	57, // 117: openim.group.group.getUserInGroupMembers:output_type -> openim.group.GetUserInGroupMembersResp
-	59, // 118: openim.group.group.getGroupMemberUserIDs:output_type -> openim.group.GetGroupMemberUserIDsResp
-	61, // 119: openim.group.group.GetGroupMemberRoleLevel:output_type -> openim.group.GetGroupMemberRoleLevelResp
-	63, // 120: openim.group.group.GetGroupInfoCache:output_type -> openim.group.GetGroupInfoCacheResp
-	65, // 121: openim.group.group.GetGroupMemberCache:output_type -> openim.group.GetGroupMemberCacheResp
-	67, // 122: openim.group.group.GroupCreateCount:output_type -> openim.group.GroupCreateCountResp
-	71, // 123: openim.group.group.NotificationUserInfoUpdate:output_type -> openim.group.notificationUserInfoUpdateResp
-	73, // 124: openim.group.group.getIncrementalGroupMember:output_type -> openim.group.getIncrementalGroupMemberResp
-	81, // 125: openim.group.group.BatchGetIncrementalGroupMember:output_type -> openim.group.BatchGetIncrementalGroupMemberResp
-	75, // 126: openim.group.group.getIncrementalJoinGroup:output_type -> openim.group.getIncrementalJoinGroupResp
-	77, // 127: openim.group.group.GetFullGroupMemberUserIDs:output_type -> openim.group.GetFullGroupMemberUserIDsResp
-	79, // 128: openim.group.group.GetFullJoinGroupIDs:output_type -> openim.group.GetFullJoinGroupIDsResp
-	1,  // 129: openim.group.group.createSingleGroup:output_type -> openim.group.CreateGroupResp
-	1,  // 130: openim.group.group.createPairGroup:output_type -> openim.group.CreateGroupResp
-	91, // [91:131] is the sub-list for method output_type
-	51, // [51:91] is the sub-list for method input_type
+	40, // 91: openim.group.group.dismissPairGroup:input_type -> openim.group.DismissGroupReq
+	1,  // 92: openim.group.group.createGroup:output_type -> openim.group.CreateGroupResp
+	17, // 93: openim.group.group.joinGroup:output_type -> openim.group.JoinGroupResp
+	21, // 94: openim.group.group.quitGroup:output_type -> openim.group.QuitGroupResp
+	3,  // 95: openim.group.group.getGroupsInfo:output_type -> openim.group.GetGroupsInfoResp
+	5,  // 96: openim.group.group.setGroupInfo:output_type -> openim.group.SetGroupInfoResp
+	7,  // 97: openim.group.group.setGroupInfoEx:output_type -> openim.group.SetGroupInfoExResp
+	9,  // 98: openim.group.group.getGroupApplicationList:output_type -> openim.group.GetGroupApplicationListResp
+	11, // 99: openim.group.group.getUserReqApplicationList:output_type -> openim.group.GetUserReqApplicationListResp
+	69, // 100: openim.group.group.getGroupUsersReqApplicationList:output_type -> openim.group.getGroupUsersReqApplicationListResp
+	13, // 101: openim.group.group.getSpecifiedUserGroupRequestInfo:output_type -> openim.group.GetSpecifiedUserGroupRequestInfoResp
+	15, // 102: openim.group.group.transferGroupOwner:output_type -> openim.group.TransferGroupOwnerResp
+	19, // 103: openim.group.group.groupApplicationResponse:output_type -> openim.group.GroupApplicationResponseResp
+	23, // 104: openim.group.group.getGroupMemberList:output_type -> openim.group.GetGroupMemberListResp
+	25, // 105: openim.group.group.getGroupMembersInfo:output_type -> openim.group.GetGroupMembersInfoResp
+	27, // 106: openim.group.group.kickGroupMember:output_type -> openim.group.KickGroupMemberResp
+	29, // 107: openim.group.group.getJoinedGroupList:output_type -> openim.group.GetJoinedGroupListResp
+	31, // 108: openim.group.group.inviteUserToGroup:output_type -> openim.group.InviteUserToGroupResp
+	36, // 109: openim.group.group.getGroups:output_type -> openim.group.GetGroupsResp
+	39, // 110: openim.group.group.getGroupMembersCMS:output_type -> openim.group.GetGroupMembersCMSResp
+	41, // 111: openim.group.group.dismissGroup:output_type -> openim.group.DismissGroupResp
+	43, // 112: openim.group.group.muteGroupMember:output_type -> openim.group.MuteGroupMemberResp
+	45, // 113: openim.group.group.cancelMuteGroupMember:output_type -> openim.group.CancelMuteGroupMemberResp
+	47, // 114: openim.group.group.muteGroup:output_type -> openim.group.MuteGroupResp
+	49, // 115: openim.group.group.cancelMuteGroup:output_type -> openim.group.CancelMuteGroupResp
+	52, // 116: openim.group.group.setGroupMemberInfo:output_type -> openim.group.SetGroupMemberInfoResp
+	55, // 117: openim.group.group.getGroupAbstractInfo:output_type -> openim.group.GetGroupAbstractInfoResp
+	57, // 118: openim.group.group.getUserInGroupMembers:output_type -> openim.group.GetUserInGroupMembersResp
+	59, // 119: openim.group.group.getGroupMemberUserIDs:output_type -> openim.group.GetGroupMemberUserIDsResp
+	61, // 120: openim.group.group.GetGroupMemberRoleLevel:output_type -> openim.group.GetGroupMemberRoleLevelResp
+	63, // 121: openim.group.group.GetGroupInfoCache:output_type -> openim.group.GetGroupInfoCacheResp
+	65, // 122: openim.group.group.GetGroupMemberCache:output_type -> openim.group.GetGroupMemberCacheResp
+	67, // 123: openim.group.group.GroupCreateCount:output_type -> openim.group.GroupCreateCountResp
+	71, // 124: openim.group.group.NotificationUserInfoUpdate:output_type -> openim.group.notificationUserInfoUpdateResp
+	73, // 125: openim.group.group.getIncrementalGroupMember:output_type -> openim.group.getIncrementalGroupMemberResp
+	81, // 126: openim.group.group.BatchGetIncrementalGroupMember:output_type -> openim.group.BatchGetIncrementalGroupMemberResp
+	75, // 127: openim.group.group.getIncrementalJoinGroup:output_type -> openim.group.getIncrementalJoinGroupResp
+	77, // 128: openim.group.group.GetFullGroupMemberUserIDs:output_type -> openim.group.GetFullGroupMemberUserIDsResp
+	79, // 129: openim.group.group.GetFullJoinGroupIDs:output_type -> openim.group.GetFullJoinGroupIDsResp
+	1,  // 130: openim.group.group.createSingleGroup:output_type -> openim.group.CreateGroupResp
+	1,  // 131: openim.group.group.createPairGroup:output_type -> openim.group.CreateGroupResp
+	41, // 132: openim.group.group.dismissPairGroup:output_type -> openim.group.DismissGroupResp
+	92, // [92:133] is the sub-list for method output_type
+	51, // [51:92] is the sub-list for method input_type
 	51, // [51:51] is the sub-list for extension type_name
 	51, // [51:51] is the sub-list for extension extendee
 	0,  // [0:51] is the sub-list for field type_name
@@ -6750,6 +6757,7 @@ type GroupClient interface {
 	GetFullJoinGroupIDs(ctx context.Context, in *GetFullJoinGroupIDsReq, opts ...grpc.CallOption) (*GetFullJoinGroupIDsResp, error)
 	CreateSingleGroup(ctx context.Context, in *CreateSingleGroupReq, opts ...grpc.CallOption) (*CreateGroupResp, error)
 	CreatePairGroup(ctx context.Context, in *CreatePairGroupReq, opts ...grpc.CallOption) (*CreateGroupResp, error)
+	DismissPairGroup(ctx context.Context, in *DismissGroupReq, opts ...grpc.CallOption) (*DismissGroupResp, error)
 }
 
 type groupClient struct {
@@ -7120,6 +7128,15 @@ func (c *groupClient) CreatePairGroup(ctx context.Context, in *CreatePairGroupRe
 	return out, nil
 }
 
+func (c *groupClient) DismissPairGroup(ctx context.Context, in *DismissGroupReq, opts ...grpc.CallOption) (*DismissGroupResp, error) {
+	out := new(DismissGroupResp)
+	err := c.cc.Invoke(ctx, "/openim.group.group/dismissPairGroup", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // GroupServer is the server API for Group service.
 type GroupServer interface {
 	// 创建群
@@ -7187,6 +7204,7 @@ type GroupServer interface {
 	GetFullJoinGroupIDs(context.Context, *GetFullJoinGroupIDsReq) (*GetFullJoinGroupIDsResp, error)
 	CreateSingleGroup(context.Context, *CreateSingleGroupReq) (*CreateGroupResp, error)
 	CreatePairGroup(context.Context, *CreatePairGroupReq) (*CreateGroupResp, error)
+	DismissPairGroup(context.Context, *DismissGroupReq) (*DismissGroupResp, error)
 }
 
 // UnimplementedGroupServer can be embedded to have forward compatible implementations.
@@ -7312,6 +7330,9 @@ func (*UnimplementedGroupServer) CreateSingleGroup(context.Context, *CreateSingl
 }
 func (*UnimplementedGroupServer) CreatePairGroup(context.Context, *CreatePairGroupReq) (*CreateGroupResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreatePairGroup not implemented")
+}
+func (*UnimplementedGroupServer) DismissPairGroup(context.Context, *DismissGroupReq) (*DismissGroupResp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method DismissPairGroup not implemented")
 }
 
 func RegisterGroupServer(s *grpc.Server, srv GroupServer) {
@@ -8038,6 +8059,24 @@ func _Group_CreatePairGroup_Handler(srv interface{}, ctx context.Context, dec fu
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Group_DismissPairGroup_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(DismissGroupReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(GroupServer).DismissPairGroup(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/openim.group.group/DismissPairGroup",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(GroupServer).DismissPairGroup(ctx, req.(*DismissGroupReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 var _Group_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "openim.group.group",
 	HandlerType: (*GroupServer)(nil),
@@ -8201,6 +8240,10 @@ var _Group_serviceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "createPairGroup",
 			Handler:    _Group_CreatePairGroup_Handler,
+		},
+		{
+			MethodName: "dismissPairGroup",
+			Handler:    _Group_DismissPairGroup_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

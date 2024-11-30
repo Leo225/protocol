@@ -482,4 +482,6 @@ service group {
 
   rpc createSingleGroup(CreateSingleGroupReq) returns (CreateGroupResp);
   rpc createPairGroup(CreatePairGroupReq) returns (CreateGroupResp);
+
+  rpc dismissPairGroup(DismissGroupReq) returns (DismissGroupResp);
 }
