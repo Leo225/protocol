@@ -406,6 +406,12 @@ message CreatePairGroupReq {
   repeated string memberUserIDs = 1;
 }
 
+message GetDefaultGroupNameReq {}
+
+message GetDefaultGroupNameResp {
+  string groupName = 1;
+}
+
 service group {
   //创建群
   rpc createGroup(CreateGroupReq) returns (CreateGroupResp);
@@ -484,4 +490,6 @@ service group {
   rpc createPairGroup(CreatePairGroupReq) returns (CreateGroupResp);
 
   rpc dismissPairGroup(DismissGroupReq) returns (DismissGroupResp);
+
+  rpc getDefaultGroupName(GetDefaultGroupNameReq) returns (GetDefaultGroupNameResp);
 }
