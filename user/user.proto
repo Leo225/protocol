@@ -352,6 +352,12 @@ message getBindUsersResp {
   repeated bindUsersInfo bindUsers = 2;
 }
 
+message logoutReq {
+  int32 platformID = 1;
+}
+
+message logoutResp {}
+
 service user {
   //Get the specified user information full field
   rpc getDesignateUsers(getDesignateUsersReq) returns (getDesignateUsersResp);
@@ -408,4 +414,6 @@ service user {
   rpc genInvitationCode(genInvitationCodeReq) returns (genInvitationCodeResp);
 
   rpc getBindUserID(getBindUsersReq) returns (getBindUsersResp);
+
+  rpc logout(logoutReq) returns (logoutResp);
 }
