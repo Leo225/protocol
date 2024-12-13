@@ -3945,16 +3945,14 @@ func (x *GetBindUsersResp) GetBindUsers() []*BindUsersInfo {
 	return nil
 }
 
-type LogoutReq struct {
+type UserUnregisterReq struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
-
-	PlatformID int32 `protobuf:"varint,1,opt,name=platformID,proto3" json:"platformID"`
 }
 
-func (x *LogoutReq) Reset() {
-	*x = LogoutReq{}
+func (x *UserUnregisterReq) Reset() {
+	*x = UserUnregisterReq{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_user_user_proto_msgTypes[74]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -3962,13 +3960,13 @@ func (x *LogoutReq) Reset() {
 	}
 }
 
-func (x *LogoutReq) String() string {
+func (x *UserUnregisterReq) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*LogoutReq) ProtoMessage() {}
+func (*UserUnregisterReq) ProtoMessage() {}
 
-func (x *LogoutReq) ProtoReflect() protoreflect.Message {
+func (x *UserUnregisterReq) ProtoReflect() protoreflect.Message {
 	mi := &file_user_user_proto_msgTypes[74]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -3980,26 +3978,19 @@ func (x *LogoutReq) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use LogoutReq.ProtoReflect.Descriptor instead.
-func (*LogoutReq) Descriptor() ([]byte, []int) {
+// Deprecated: Use UserUnregisterReq.ProtoReflect.Descriptor instead.
+func (*UserUnregisterReq) Descriptor() ([]byte, []int) {
 	return file_user_user_proto_rawDescGZIP(), []int{74}
 }
 
-func (x *LogoutReq) GetPlatformID() int32 {
-	if x != nil {
-		return x.PlatformID
-	}
-	return 0
-}
-
-type LogoutResp struct {
+type UserUnregisterResp struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 }
 
-func (x *LogoutResp) Reset() {
-	*x = LogoutResp{}
+func (x *UserUnregisterResp) Reset() {
+	*x = UserUnregisterResp{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_user_user_proto_msgTypes[75]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -4007,13 +3998,13 @@ func (x *LogoutResp) Reset() {
 	}
 }
 
-func (x *LogoutResp) String() string {
+func (x *UserUnregisterResp) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*LogoutResp) ProtoMessage() {}
+func (*UserUnregisterResp) ProtoMessage() {}
 
-func (x *LogoutResp) ProtoReflect() protoreflect.Message {
+func (x *UserUnregisterResp) ProtoReflect() protoreflect.Message {
 	mi := &file_user_user_proto_msgTypes[75]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -4025,8 +4016,8 @@ func (x *LogoutResp) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use LogoutResp.ProtoReflect.Descriptor instead.
-func (*LogoutResp) Descriptor() ([]byte, []int) {
+// Deprecated: Use UserUnregisterResp.ProtoReflect.Descriptor instead.
+func (*UserUnregisterResp) Descriptor() ([]byte, []int) {
 	return file_user_user_proto_rawDescGZIP(), []int{75}
 }
 
@@ -4511,11 +4502,10 @@ var file_user_user_proto_rawDesc = []byte{
 	0x09, 0x62, 0x69, 0x6e, 0x64, 0x55, 0x73, 0x65, 0x72, 0x73, 0x18, 0x02, 0x20, 0x03, 0x28, 0x0b,
 	0x32, 0x1a, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x62,
 	0x69, 0x6e, 0x64, 0x55, 0x73, 0x65, 0x72, 0x73, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x09, 0x62, 0x69,
-	0x6e, 0x64, 0x55, 0x73, 0x65, 0x72, 0x73, 0x22, 0x2b, 0x0a, 0x09, 0x6c, 0x6f, 0x67, 0x6f, 0x75,
-	0x74, 0x52, 0x65, 0x71, 0x12, 0x1e, 0x0a, 0x0a, 0x70, 0x6c, 0x61, 0x74, 0x66, 0x6f, 0x72, 0x6d,
-	0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0a, 0x70, 0x6c, 0x61, 0x74, 0x66, 0x6f,
-	0x72, 0x6d, 0x49, 0x44, 0x22, 0x0c, 0x0a, 0x0a, 0x6c, 0x6f, 0x67, 0x6f, 0x75, 0x74, 0x52, 0x65,
-	0x73, 0x70, 0x32, 0xeb, 0x15, 0x0a, 0x04, 0x75, 0x73, 0x65, 0x72, 0x12, 0x5a, 0x0a, 0x11, 0x67,
+	0x6e, 0x64, 0x55, 0x73, 0x65, 0x72, 0x73, 0x22, 0x13, 0x0a, 0x11, 0x75, 0x73, 0x65, 0x72, 0x55,
+	0x6e, 0x72, 0x65, 0x67, 0x69, 0x73, 0x74, 0x65, 0x72, 0x52, 0x65, 0x71, 0x22, 0x14, 0x0a, 0x12,
+	0x75, 0x73, 0x65, 0x72, 0x55, 0x6e, 0x72, 0x65, 0x67, 0x69, 0x73, 0x74, 0x65, 0x72, 0x52, 0x65,
+	0x73, 0x70, 0x32, 0x83, 0x16, 0x0a, 0x04, 0x75, 0x73, 0x65, 0x72, 0x12, 0x5a, 0x0a, 0x11, 0x67,
 	0x65, 0x74, 0x44, 0x65, 0x73, 0x69, 0x67, 0x6e, 0x61, 0x74, 0x65, 0x55, 0x73, 0x65, 0x72, 0x73,
 	0x12, 0x21, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x67,
 	0x65, 0x74, 0x44, 0x65, 0x73, 0x69, 0x67, 0x6e, 0x61, 0x74, 0x65, 0x55, 0x73, 0x65, 0x72, 0x73,
@@ -4686,13 +4676,15 @@ var file_user_user_proto_rawDesc = []byte{
 	0x6d, 0x2e, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x67, 0x65, 0x74, 0x42, 0x69, 0x6e, 0x64, 0x55, 0x73,
 	0x65, 0x72, 0x73, 0x52, 0x65, 0x71, 0x1a, 0x1d, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e,
 	0x75, 0x73, 0x65, 0x72, 0x2e, 0x67, 0x65, 0x74, 0x42, 0x69, 0x6e, 0x64, 0x55, 0x73, 0x65, 0x72,
-	0x73, 0x52, 0x65, 0x73, 0x70, 0x12, 0x39, 0x0a, 0x06, 0x6c, 0x6f, 0x67, 0x6f, 0x75, 0x74, 0x12,
-	0x16, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x2e, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x6c, 0x6f,
-	0x67, 0x6f, 0x75, 0x74, 0x52, 0x65, 0x71, 0x1a, 0x17, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d,
-	0x2e, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x6c, 0x6f, 0x67, 0x6f, 0x75, 0x74, 0x52, 0x65, 0x73, 0x70,
-	0x42, 0x24, 0x5a, 0x22, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x6f,
-	0x70, 0x65, 0x6e, 0x69, 0x6d, 0x73, 0x64, 0x6b, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f,
-	0x6c, 0x2f, 0x75, 0x73, 0x65, 0x72, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x73, 0x52, 0x65, 0x73, 0x70, 0x12, 0x51, 0x0a, 0x0e, 0x75, 0x73, 0x65, 0x72, 0x55, 0x6e, 0x72,
+	0x65, 0x67, 0x69, 0x73, 0x74, 0x65, 0x72, 0x12, 0x1e, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d,
+	0x2e, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x75, 0x73, 0x65, 0x72, 0x55, 0x6e, 0x72, 0x65, 0x67, 0x69,
+	0x73, 0x74, 0x65, 0x72, 0x52, 0x65, 0x71, 0x1a, 0x1f, 0x2e, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d,
+	0x2e, 0x75, 0x73, 0x65, 0x72, 0x2e, 0x75, 0x73, 0x65, 0x72, 0x55, 0x6e, 0x72, 0x65, 0x67, 0x69,
+	0x73, 0x74, 0x65, 0x72, 0x52, 0x65, 0x73, 0x70, 0x42, 0x24, 0x5a, 0x22, 0x67, 0x69, 0x74, 0x68,
+	0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x6f, 0x70, 0x65, 0x6e, 0x69, 0x6d, 0x73, 0x64, 0x6b,
+	0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x2f, 0x75, 0x73, 0x65, 0x72, 0x62, 0x06,
+	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -4783,8 +4775,8 @@ var file_user_user_proto_goTypes = []interface{}{
 	(*BindUsersInfo)(nil),                     // 71: openim.user.bindUsersInfo
 	(*GetBindUsersReq)(nil),                   // 72: openim.user.getBindUsersReq
 	(*GetBindUsersResp)(nil),                  // 73: openim.user.getBindUsersResp
-	(*LogoutReq)(nil),                         // 74: openim.user.logoutReq
-	(*LogoutResp)(nil),                        // 75: openim.user.logoutResp
+	(*UserUnregisterReq)(nil),                 // 74: openim.user.userUnregisterReq
+	(*UserUnregisterResp)(nil),                // 75: openim.user.userUnregisterResp
 	(*AccountCheckRespSingleUserStatus)(nil),  // 76: openim.user.accountCheckResp.singleUserStatus
 	nil,                                       // 77: openim.user.userRegisterCountResp.CountEntry
 	nil,                                       // 78: openim.user.sortQueryReq.UserIDNameEntry
@@ -4853,7 +4845,7 @@ var file_user_user_proto_depIdxs = []int32{
 	67, // 55: openim.user.user.getAllOnlineUsers:input_type -> openim.user.getAllOnlineUsersReq
 	69, // 56: openim.user.user.genInvitationCode:input_type -> openim.user.genInvitationCodeReq
 	72, // 57: openim.user.user.getBindUserID:input_type -> openim.user.getBindUsersReq
-	74, // 58: openim.user.user.logout:input_type -> openim.user.logoutReq
+	74, // 58: openim.user.user.userUnregister:input_type -> openim.user.userUnregisterReq
 	5,  // 59: openim.user.user.getDesignateUsers:output_type -> openim.user.getDesignateUsersResp
 	7,  // 60: openim.user.user.updateUserInfo:output_type -> openim.user.updateUserInfoResp
 	9,  // 61: openim.user.user.updateUserInfoEx:output_type -> openim.user.updateUserInfoExResp
@@ -4882,7 +4874,7 @@ var file_user_user_proto_depIdxs = []int32{
 	68, // 84: openim.user.user.getAllOnlineUsers:output_type -> openim.user.getAllOnlineUsersResp
 	70, // 85: openim.user.user.genInvitationCode:output_type -> openim.user.genInvitationCodeResp
 	73, // 86: openim.user.user.getBindUserID:output_type -> openim.user.getBindUsersResp
-	75, // 87: openim.user.user.logout:output_type -> openim.user.logoutResp
+	75, // 87: openim.user.user.userUnregister:output_type -> openim.user.userUnregisterResp
 	59, // [59:88] is the sub-list for method output_type
 	30, // [30:59] is the sub-list for method input_type
 	30, // [30:30] is the sub-list for extension type_name
@@ -5785,7 +5777,7 @@ func file_user_user_proto_init() {
 			}
 		}
 		file_user_user_proto_msgTypes[74].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*LogoutReq); i {
+			switch v := v.(*UserUnregisterReq); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -5797,7 +5789,7 @@ func file_user_user_proto_init() {
 			}
 		}
 		file_user_user_proto_msgTypes[75].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*LogoutResp); i {
+			switch v := v.(*UserUnregisterResp); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -5904,7 +5896,7 @@ type UserClient interface {
 	GetAllOnlineUsers(ctx context.Context, in *GetAllOnlineUsersReq, opts ...grpc.CallOption) (*GetAllOnlineUsersResp, error)
 	GenInvitationCode(ctx context.Context, in *GenInvitationCodeReq, opts ...grpc.CallOption) (*GenInvitationCodeResp, error)
 	GetBindUserID(ctx context.Context, in *GetBindUsersReq, opts ...grpc.CallOption) (*GetBindUsersResp, error)
-	Logout(ctx context.Context, in *LogoutReq, opts ...grpc.CallOption) (*LogoutResp, error)
+	UserUnregister(ctx context.Context, in *UserUnregisterReq, opts ...grpc.CallOption) (*UserUnregisterResp, error)
 }
 
 type userClient struct {
@@ -6167,9 +6159,9 @@ func (c *userClient) GetBindUserID(ctx context.Context, in *GetBindUsersReq, opt
 	return out, nil
 }
 
-func (c *userClient) Logout(ctx context.Context, in *LogoutReq, opts ...grpc.CallOption) (*LogoutResp, error) {
-	out := new(LogoutResp)
-	err := c.cc.Invoke(ctx, "/openim.user.user/logout", in, out, opts...)
+func (c *userClient) UserUnregister(ctx context.Context, in *UserUnregisterReq, opts ...grpc.CallOption) (*UserUnregisterResp, error) {
+	out := new(UserUnregisterResp)
+	err := c.cc.Invoke(ctx, "/openim.user.user/userUnregister", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -6229,7 +6221,7 @@ type UserServer interface {
 	GetAllOnlineUsers(context.Context, *GetAllOnlineUsersReq) (*GetAllOnlineUsersResp, error)
 	GenInvitationCode(context.Context, *GenInvitationCodeReq) (*GenInvitationCodeResp, error)
 	GetBindUserID(context.Context, *GetBindUsersReq) (*GetBindUsersResp, error)
-	Logout(context.Context, *LogoutReq) (*LogoutResp, error)
+	UserUnregister(context.Context, *UserUnregisterReq) (*UserUnregisterResp, error)
 }
 
 // UnimplementedUserServer can be embedded to have forward compatible implementations.
@@ -6320,8 +6312,8 @@ func (*UnimplementedUserServer) GenInvitationCode(context.Context, *GenInvitatio
 func (*UnimplementedUserServer) GetBindUserID(context.Context, *GetBindUsersReq) (*GetBindUsersResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBindUserID not implemented")
 }
-func (*UnimplementedUserServer) Logout(context.Context, *LogoutReq) (*LogoutResp, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Logout not implemented")
+func (*UnimplementedUserServer) UserUnregister(context.Context, *UserUnregisterReq) (*UserUnregisterResp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UserUnregister not implemented")
 }
 
 func RegisterUserServer(s *grpc.Server, srv UserServer) {
@@ -6832,20 +6824,20 @@ func _User_GetBindUserID_Handler(srv interface{}, ctx context.Context, dec func(
 	return interceptor(ctx, in, info, handler)
 }
 
-func _User_Logout_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(LogoutReq)
+func _User_UserUnregister_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UserUnregisterReq)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(UserServer).Logout(ctx, in)
+		return srv.(UserServer).UserUnregister(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/openim.user.user/Logout",
+		FullMethod: "/openim.user.user/UserUnregister",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(UserServer).Logout(ctx, req.(*LogoutReq))
+		return srv.(UserServer).UserUnregister(ctx, req.(*UserUnregisterReq))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -6967,8 +6959,8 @@ var _User_serviceDesc = grpc.ServiceDesc{
 			Handler:    _User_GetBindUserID_Handler,
 		},
 		{
-			MethodName: "logout",
-			Handler:    _User_Logout_Handler,
+			MethodName: "userUnregister",
+			Handler:    _User_UserUnregister_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

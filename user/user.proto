@@ -352,11 +352,9 @@ message getBindUsersResp {
   repeated bindUsersInfo bindUsers = 2;
 }
 
-message logoutReq {
-  int32 platformID = 1;
-}
+message userUnregisterReq {}
 
-message logoutResp {}
+message userUnregisterResp {}
 
 service user {
   //Get the specified user information full field
@@ -415,5 +413,5 @@ service user {
 
   rpc getBindUserID(getBindUsersReq) returns (getBindUsersResp);
 
-  rpc logout(logoutReq) returns (logoutResp);
+  rpc userUnregister(userUnregisterReq) returns (userUnregisterResp);
 }
