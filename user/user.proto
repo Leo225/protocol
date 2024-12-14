@@ -352,10 +352,6 @@ message getBindUsersResp {
   repeated bindUsersInfo bindUsers = 2;
 }
 
-message userUnregisterReq {}
-
-message userUnregisterResp {}
-
 service user {
   //Get the specified user information full field
   rpc getDesignateUsers(getDesignateUsersReq) returns (getDesignateUsersResp);
@@ -412,6 +408,4 @@ service user {
   rpc genInvitationCode(genInvitationCodeReq) returns (genInvitationCodeResp);
 
   rpc getBindUserID(getBindUsersReq) returns (getBindUsersResp);
-
-  rpc userUnregister(userUnregisterReq) returns (userUnregisterResp);
 }
