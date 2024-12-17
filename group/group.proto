@@ -406,6 +406,14 @@ message CreatePairGroupReq {
   repeated string memberUserIDs = 1;
 }
 
+message getJoinedGroupIDReq {
+  string fromUserID = 1;
+}
+
+message getJoinedGroupIDResp {
+  repeated string groupIDs = 1;
+}
+
 service group {
   //创建群
   rpc createGroup(CreateGroupReq) returns (CreateGroupResp);
@@ -484,4 +492,5 @@ service group {
   rpc createPairGroup(CreatePairGroupReq) returns (CreateGroupResp);
 
   rpc dismissPairGroup(DismissGroupReq) returns (DismissGroupResp);
+  rpc getJoinedGroupID(getJoinedGroupIDReq) returns (getJoinedGroupIDResp);
 }
